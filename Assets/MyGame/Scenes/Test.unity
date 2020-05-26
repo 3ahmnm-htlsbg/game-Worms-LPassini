@@ -153,11 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22acf89bbd25be947b9453ff52b4f476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpKey: 32
+  jumpKey: 119
   fowardKey: 100
-  z: {fileID: 441324732}
-  x: {x: 0, y: 250, z: 0}
-  y: {x: 200, y: 0, z: 0}
+  backkey: 97
+  rigid: {fileID: 441324732}
+  jump: {x: 0, y: 250, z: 0}
+  forwared: {x: 200, y: 0, z: 0}
 --- !u!136 &441324728
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -225,7 +226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441324726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0330906, y: 0.72, z: -0.04622078}
+  m_LocalPosition: {x: 1, y: 0.72, z: -0.04622078}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
