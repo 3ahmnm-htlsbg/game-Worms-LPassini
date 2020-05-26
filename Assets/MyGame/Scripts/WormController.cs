@@ -13,7 +13,8 @@ public class WormController : MonoBehaviour
     public Vector3 jump;
     public Vector3 forwared;
     public GameObject projectile;
-
+    public Vector3 position;
+    public Quaternion Quat;
     // Update is called once per frame
     void Update()
     {
@@ -43,7 +44,7 @@ public class WormController : MonoBehaviour
         if (Input.GetKeyDown(shootKey))
         {
             Debug.Log("Pew Pew");
-            Instantiate(projectile);
+            Instantiate(projectile,position,Quat);
             
         }
     }
