@@ -163,6 +163,10 @@ MonoBehaviour:
   forwared: {x: 200, y: 0, z: 0}
   projectile: {fileID: 7304291198820440326, guid: 41909c94886b5004ab44a22a79287cd0,
     type: 3}
+  position: {x: 0, y: 10, z: 0}
+  Quat: {x: 0, y: 0, z: 0, w: 0}
+  ok: {fileID: 603751797}
+  posok: {x: 0, y: 0, z: 0}
 --- !u!136 &441324728
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -252,6 +256,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &603751797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603751798}
+  m_Layer: 0
+  m_Name: ok
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603751798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603751797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2689122, y: 4.04, z: -0.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &666522347
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,13 +412,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpKey: 105
   downKey: 107
-  fowardKey: 106
-  backkey: 108
-  shootKey: 0
+  fowardKey: 108
+  backkey: 106
+  shootKey: 112
   rigid: {fileID: 685977657}
   jump: {x: 0, y: 250, z: 0}
   forwared: {x: 200, y: 0, z: 0}
-  projectile: {fileID: 0}
+  projectile: {fileID: 603751797}
+  position: {x: 5, y: 5, z: 0}
+  Quat: {x: 0, y: 0, z: 0, w: 0}
+  ok: {fileID: 603751797}
+  posok: {x: 0, y: 0, z: 0}
 --- !u!54 &685977657
 Rigidbody:
   m_ObjectHideFlags: 0
