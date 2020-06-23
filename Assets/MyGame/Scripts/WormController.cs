@@ -14,11 +14,13 @@ public class WormController : MonoBehaviour
     public Vector3 forwared;
     public GameObject projectile;
 
-    public Vector3 position;
-    public Quaternion Quat;
+    public GameObject panzer;
+    public Vector3 af;
+   
+ //   public Vector3 position;
+ //   public Quaternion Quat;
 
-    public GameObject ok;
-    public Vector3 posok;
+ 
     // Update is called once per frame
     void Update()
     {
@@ -47,16 +49,11 @@ public class WormController : MonoBehaviour
         }
         if (Input.GetKeyDown(shootKey))
         {
-            Debug.Log("Pew Pew");
-            posok = ok.transform.position;
-            GameObject clone;
-            clone = Instantiate(projectile,position,Quat);
-            Rigidbody rb;
-            rb = clone.GetComponent<Rigidbody>();
-            rb.AddForce (new Vector3(500,0,0));
-            // clone = Rigidbody.GetComponent(clone);
-            // rb.AddForce;
-            //HingeJoint hinge = gameObject.GetComponent(); 
+              GameObject Savepanzer = 
+            Instantiate(projectile, panzer.transform.position, panzer.transform.rotation);
+            Rigidbody rbp = Savepanzer.GetComponent(typeof(Rigidbody)) as Rigidbody;
+            rbp.AddForce(af);
+        
         }
     }
 }
